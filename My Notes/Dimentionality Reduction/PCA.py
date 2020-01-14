@@ -15,7 +15,7 @@ X = pd.DataFrame(X, columns=['X1', 'X2'])
 utils.plot_data_2d(X)
 print(X.corr()) 
 
-lpca = decomposition.PCA(2)
+lpca = decomposition.PCA(n_components=0.96)
 lpca.fit(X)
 print(lpca.components_)
 print(lpca.explained_variance_)
